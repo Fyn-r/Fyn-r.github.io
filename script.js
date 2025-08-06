@@ -2,7 +2,7 @@
 
 // DECLARE DECLARE DECLARE DECLARE //
 // DEFAULT PAGE
-localStorage.setItem("page", 5);
+localStorage.setItem("page", 0);
 let page = localStorage.getItem("page") ? parseInt(localStorage.getItem("page")) : 0;
 // SCORE STORAGE
 localStorage.setItem("score0", "");
@@ -190,4 +190,5 @@ function end() {
 }
 
 // DO FUNCTION DO FUNCTION DO FUNCTION DO FUNCTION //
+
 refresh()
