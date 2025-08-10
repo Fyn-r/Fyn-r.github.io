@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="Id">
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-header" id="h1">Hormon-Kel 4</div>
+    </div>
+    <div class="nothing"></div>
+    <section class="content">
+        <div class="content1">
+
+            <div id="card">
+                <div class="card-header"><span class="card-header-title" id="card-title"></span></div>
+                <div class="card-content">
+                    <div class="card-content-left">
+                        <div class="question-container">
+                            <span class="question" id="question"></span>
+                        </div>
+                        <div class="choice-container">
+                            <div class="soal-pilgan">
+                                <div class="choice">
+                                    <input type="radio"  name="choice" id="A">
+                                    <label for="A" id="A-val"></label>
+                                </div>
+                                <div class="choice">
+                                    <input type="radio" name="choice" id="B">
+                                    <label for="B" id="B-val"></label>
+                                </div>
+                                <div class="choice">
+                                    <input type="radio" name="choice" id="C">
+                                    <label for="C" id="C-val"></label>
+                                </div>
+                                <div class="choice">
+                                    <input type="radio" name="choice" id="D">
+                                    <label for="D" id="D-val"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content-right">
+                        <div class="score">
+                            <div class="score-top">B / S</div>
+                            <div class="score-bottom">
+                                <span class="score-value" id="score"></span>
+                            </div>
+                        </div>
+                        <button class="verify" onclick=check();refresh()>Check</button>
+                        <button class="end-button" onclick=end()>End</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="average" style="display: none;">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle" id="circle3"></div>
+                <div id="average-container"><span id="average-value"></span></div>
+            </div>
+
+        </div>
+    </section>
+    <div class="next">
+        <button class="next-button" onclick=plusPage()>\<br>/</button>
+    </div>
+    <div class="back">
+        <button class="back-button" onclick=minPage()>/<br>\</button>
+    </div>
+    <script src="script.js" type="application/javascript"></script>
+</body>
+
+</html>
